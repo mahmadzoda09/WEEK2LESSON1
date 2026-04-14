@@ -224,6 +224,27 @@ header .section1 div .more {
   color: white;
 }
 
+.foot {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+.foot h2 {
+  color: #252B42;
+}
+.foot p {
+  color: #737373;
+}
+.foot div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+
 @media (max-width: 500px) {
   .beforehead {
     display: inline !important;
@@ -267,5 +288,9 @@ header .section1 div .more {
   .section6 h1 {
     display: inline !important;
     text-align: center;
+  }
+  .foot {
+    flex-direction: column;
+    gap: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

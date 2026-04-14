@@ -227,10 +227,26 @@ header {
     }
   }
 }
-
-
-
-
+.foot{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  max-width: $max;
+  margin: auto;
+  padding: 50px;
+  h2{
+    color: #252B42;
+  }
+  p{
+    color: $colp;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+}
 
 
 
@@ -284,5 +300,9 @@ header {
       display: inline !important;
       text-align: center;
     }
+  }
+  .foot{
+    flex-direction: column;
+    gap: 50px;
   }
 }
