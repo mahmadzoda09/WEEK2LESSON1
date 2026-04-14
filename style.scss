@@ -193,7 +193,40 @@ header {
     display: none;
   }
 }
-
+.back2{
+  background-color: #252B42;
+  color: $wht;
+  padding: 100px 0; 
+  .section6{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 350px;
+    .onee{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;      
+    }
+    .twoo{
+      display: flex;
+      align-items: center;
+      background-color: $wht;
+      border-radius: 5px;
+      input{
+        padding: 15px 50px 15px 10px;
+        outline: none;
+      }
+      .subs{
+        background-color: $butcolor;
+        border: none;
+        border-radius: 0px 5px 5px 0px ;
+        padding: 17px;
+        color: $wht;
+      }
+    }
+  }
+}
 
 
 
@@ -235,6 +268,21 @@ header {
     }
     img:last-child{
       display: inline;
+    }
+  }
+  .section6{
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px;
+    .twoo{
+      margin-top: -300px;
+    }
+    .onee{
+      display: none !important;
+    }
+    h1{
+      display: inline !important;
+      text-align: center;
     }
   }
 }
