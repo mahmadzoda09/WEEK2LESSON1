@@ -92,6 +92,64 @@ header .section1 div .more {
   display: none !important;
 }
 
+.section2 {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+}
+.section2 .for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 350px;
+  gap: 10px;
+}
+.section2 .for h1 {
+  color: #252b42;
+  font-size: 40px;
+}
+.section2 p {
+  color: #737373;
+}
+.section2 .divs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.section2 .divs div {
+  display: flex;
+  flex-direction: column;
+}
+.section2 .divs div .firstnav {
+  display: flex;
+  color: white;
+  background-color: #8ec2f2;
+  padding: 30px 50px;
+  border-radius: 10px 10px 0 0;
+  align-items: center;
+  gap: 20px;
+}
+.section2 .divs div .secondnav {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  border: 1px solid #8ec2f2;
+  gap: 10px;
+}
+.section2 .divs div .secondnav button {
+  color: #23a6f0;
+  border: none;
+  background: none;
+  align-self: start;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 @media (max-width: 500px) {
   .beforehead {
     display: inline !important;
@@ -99,5 +157,14 @@ header .section1 div .more {
   }
   header {
     display: none;
+  }
+  .section2 {
+    padding: 20px;
+  }
+  .section2 .for {
+    padding: 0;
+  }
+  .section2 .divs {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
