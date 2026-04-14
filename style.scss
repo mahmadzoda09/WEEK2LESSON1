@@ -101,18 +101,6 @@ header {
   flex-direction: column;
   gap: 50px;
   padding: 50px 0;
-  .for {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 350px;
-    gap: 10px;
-    h1 {
-      color: #252b42;
-      font-size: 40px;
-    }
-  }
   p {
     color: $colp;
   }
@@ -151,18 +139,70 @@ header {
     }
   }
 }
-.section3{
+.for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 350px;
+  gap: 10px;
+  h1 {
+    color: #252b42;
+    font-size: 40px;
+  }
+}
+.section3 {
   @extend .section2;
-  .fist{
+  .fist {
     display: flex;
     flex-direction: column;
     align-items: start;
-    border: 1px solid #DEDEDE;
+    border: 1px solid #dedede;
     padding: 30px 35px;
     border-radius: 5px;
     gap: 20px;
   }
 }
+.back {
+  background-color: #fafafa;
+  .section4 {
+    @extend .section3;
+    gap: 25px;
+    .three{
+      display: flex;
+      gap: 100px;
+      nav{
+        display: flex;
+        align-items: start;
+        gap: 20px;  
+        background-color: $wht;
+        padding: 30px 25px;
+        border-radius: 10px;
+        aside{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }      
+      }
+    }
+  }
+}
+.section5{
+  @extend .section3;
+  img:last-child{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 500px) {
   .beforehead {
@@ -174,11 +214,27 @@ header {
   }
   .section2 {
     padding: 20px;
-    .for{
-      padding: 0;
-    }
     .divs {
       flex-direction: column;
+    }
+  }
+  .for {
+    padding: 0;
+  }
+  .section4{
+    .three{
+      flex-direction: column;
+    }
+    .three:last-child{
+      display: none;
+    }
+  }
+  .section5{
+    .none{
+      display: none !important;
+    }
+    img:last-child{
+      display: inline;
     }
   }
 }

@@ -92,7 +92,7 @@ header .section1 div .more {
   display: none !important;
 }
 
-.section2, .section3 {
+.section2, .section3, .section5, .back .section4 {
   display: flex;
   max-width: 1200px;
   margin: auto;
@@ -100,32 +100,20 @@ header .section1 div .more {
   gap: 50px;
   padding: 50px 0;
 }
-.section2 .for, .section3 .for {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0 350px;
-  gap: 10px;
-}
-.section2 .for h1, .section3 .for h1 {
-  color: #252b42;
-  font-size: 40px;
-}
-.section2 p, .section3 p {
+.section2 p, .section3 p, .section5 p, .back .section4 p {
   color: #737373;
 }
-.section2 .divs, .section3 .divs {
+.section2 .divs, .section3 .divs, .section5 .divs, .back .section4 .divs {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
 }
-.section2 .divs .prosta, .section3 .divs .prosta {
+.section2 .divs .prosta, .section3 .divs .prosta, .section5 .divs .prosta, .back .section4 .divs .prosta {
   display: flex;
   flex-direction: column;
 }
-.section2 .divs .prosta .firstnav, .section3 .divs .prosta .firstnav {
+.section2 .divs .prosta .firstnav, .section3 .divs .prosta .firstnav, .section5 .divs .prosta .firstnav, .back .section4 .divs .prosta .firstnav {
   display: flex;
   color: white;
   background-color: #8ec2f2;
@@ -134,14 +122,14 @@ header .section1 div .more {
   align-items: center;
   gap: 20px;
 }
-.section2 .divs .prosta .secondnav, .section3 .divs .prosta .secondnav {
+.section2 .divs .prosta .secondnav, .section3 .divs .prosta .secondnav, .section5 .divs .prosta .secondnav, .back .section4 .divs .prosta .secondnav {
   display: flex;
   flex-direction: column;
   padding: 30px 50px;
   border: 1px solid #8ec2f2;
   gap: 10px;
 }
-.section2 .divs .prosta .secondnav button, .section3 .divs .prosta .secondnav button {
+.section2 .divs .prosta .secondnav button, .section3 .divs .prosta .secondnav button, .section5 .divs .prosta .secondnav button, .back .section4 .divs .prosta .secondnav button {
   color: #23a6f0;
   border: none;
   background: none;
@@ -150,14 +138,55 @@ header .section1 div .more {
   font-size: 14px;
 }
 
-.section3 .fist {
+.for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 350px;
+  gap: 10px;
+}
+.for h1 {
+  color: #252b42;
+  font-size: 40px;
+}
+
+.section3 .fist, .section5 .fist, .back .section4 .fist {
   display: flex;
   flex-direction: column;
   align-items: start;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   padding: 30px 35px;
   border-radius: 5px;
   gap: 20px;
+}
+
+.back {
+  background-color: #fafafa;
+}
+.back .section4 {
+  gap: 25px;
+}
+.back .section4 .three {
+  display: flex;
+  gap: 100px;
+}
+.back .section4 .three nav {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+}
+.back .section4 .three nav aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section5 img:last-child {
+  display: none;
 }
 
 @media (max-width: 500px) {
@@ -168,13 +197,25 @@ header .section1 div .more {
   header {
     display: none;
   }
-  .section2, .section3 {
+  .section2, .section3, .back .section4, .section5 {
     padding: 20px;
   }
-  .section2 .for, .section3 .for {
+  .section2 .divs, .section3 .divs, .back .section4 .divs, .section5 .divs {
+    flex-direction: column;
+  }
+  .for {
     padding: 0;
   }
-  .section2 .divs, .section3 .divs {
+  .section4 .three {
     flex-direction: column;
+  }
+  .section4 .three:last-child {
+    display: none;
+  }
+  .section5 .none {
+    display: none !important;
+  }
+  .section5 img:last-child {
+    display: inline;
   }
 }/*# sourceMappingURL=style.css.map */
