@@ -121,7 +121,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    div {
+    .prosta {
       display: flex;
       flex-direction: column;
       .firstnav {
@@ -149,6 +149,18 @@ header {
         }
       }
     }
+  }
+}
+.section3{
+  @extend .section2;
+  .fist{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid #DEDEDE;
+    padding: 30px 35px;
+    border-radius: 5px;
+    gap: 20px;
   }
 }
 
